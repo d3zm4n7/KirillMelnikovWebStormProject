@@ -42,3 +42,14 @@ ul{
     text-align: left;
     width: 75%;
 }
+pre {
+    font-size: 18px; /* Увеличь шрифт, подстрой размер по своему вкусу */
+    font-family: Georgia, Times, serif; /* Выбери моноширинный шрифт */
+    line-height: 1.5; /* Улучши читаемость, увеличив межстрочный интервал */
+    background-color: black; /* Добавь фон для эстетики */
+    border: 1px solid green; /* Тонкая рамка */
+    padding: 10px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругленные углы */
+    overflow-x: auto; /* Добавь горизонтальную прокрутку для длинного текста */
+    width: 50%;
+}
