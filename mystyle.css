@@ -1,55 +1,149 @@
-img{
-    margin-left: 40%;
+/* Общий стиль для всей страницы */
+body {
+    font-family: Georgia, Times, serif;
+    background-color: #e0f7de; /* Нежный зеленый фон */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Увеличенный межстрочный интервал для читабельности */
+}
+
+/* Заголовок страницы */
+h1 {
+    font-family: Georgia, Times, serif;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Изображение */
+img {
+    display: block;
+    margin: 20px auto; /* Центрируем */
     border: 1px solid green;
-    border-radius: 160px;
-    width: 20%;
+    border-radius: 160px; /* Скругленные края */
+    width: 20%; /* Адаптивная ширина */
     padding: 0.2%;
 }
-h1{
-    font-family: Georgia, Times, serif;
-    letter-spacing: 2px;
-    font-variant: small-caps;
-    color: green;
-    text-align: center;
-}
-body{
-    font-family: Georgia, Times, serif;
-    background-color: lightgreen;
-}
-ul{
 
+/* Списки */
+ul {
     list-style-type: square;
-    margin-left: 5%;
-    border: 1pt dotted green;
-    width: 20%;
+    margin: 10px 5%;
+    padding: 10px;
+    border: 1px dotted green;
+    max-width: 80%; /* Адаптивная ширина */
+    background-color: #ffffff; /* Белый фон для выделения списка */
+    border-radius: 5px; /* Скругленные углы */
 }
+
+/* Секция MVP */
 #issue1 {
-    margin-left: 25%;
-    border: 1pt dotted green;
+    margin: 20px auto;
+    border: 1px dotted green;
     font-family: Georgia, Times, serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-variant: small-caps;
     color: green;
     text-align: center;
-    width: 50%;
+    max-width: 70%;
+    padding: 20px;
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для объема */
 }
+
+/* Секция Git */
 #issue2 {
-    margin-left: 25%;
+    margin: 20px auto;
     font-family: Georgia, Times, serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-variant: all-small-caps;
     color: green;
     text-align: left;
-    width: 75%;
+    max-width: 70%;
+    padding: 20px;
+    background-color: #ffffff; /* Белый фон */
+    border: 1px dotted green;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для объема */
 }
+
+/* Блоки кода */
 pre {
-    font-size: 18px; /* Увеличь шрифт, подстрой размер по своему вкусу */
-    font-family: Georgia, Times, serif; /* Выбери моноширинный шрифт */
-    line-height: 1.5; /* Улучши читаемость, увеличив межстрочный интервал */
-    background-color: black; /* Добавь фон для эстетики */
-    border: 1px solid green; /* Тонкая рамка */
-    padding: 10px; /* Внутренние отступы */
-    border-radius: 5px; /* Скругленные углы */
-    overflow-x: auto; /* Добавь горизонтальную прокрутку для длинного текста */
-    width: 50%;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт */
+    line-height: 1.5;
+    background-color: #1e1e1e; /* Темный фон */
+    color: #d4d4d4; /* Светлый текст */
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Горизонтальная прокрутка для длинного текста */
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* Навигация */
+nav ul {
+    display: flex;
+    justify-content: center; /* Центрируем ссылки */
+    gap: 15px; /* Расстояние между элементами */
+    list-style: none;
+    padding: 10px;
+    background-color: #ffffff; /* Белый фон */
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: lightgreen;
+    border-radius: 3px;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-top: 1px solid green;
+    color: green;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    img {
+        width: 50%; /* Увеличиваем изображение на маленьких экранах */
+    }
+
+    ul, #issue1, #issue2, pre {
+        max-width: 90%; /* Увеличиваем ширину для мобильных устройств */
+        margin: 10px auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Меню в колонку */
+        align-items: center;
+    }
 }
