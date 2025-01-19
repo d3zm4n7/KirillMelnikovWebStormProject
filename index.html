@@ -2,58 +2,86 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirill Git Koduleht</title>
     <!--css file connection-->
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-<h1>Kirill Git Koduleht</h1>
-<!--pilt-->
-<img src="snoopdog.jpg" alt="Snoop Dogg">
-<h3>Ma õpin Noorem Tarkvaraarendaja eriala</h3>
-<strong>Õpitud ained on:</strong>
-<ul>
-    <li>Projekti loomine</li>
-    <li>Kontoriöö tarkvara</li>
-    <li>Arvuti- ja taristu alused</li>
-    <li>Multimeedia</li>
-</ul>
-<!--link on my portfoolio-->
-<a href="https://kirillmelnikov24.thkit.ee/wp/" target="_blank">WP portfolio</a>
-<div id="issue1">
-    <h3>MVP mõiste</h3>
-    <p>
-        <strong>MVP (Minimum Viable Product)</strong> on toote või teenuse minimaalne töötav versioon,
-        millel on vaid kõige olulisemad funktsioonid. Selle eesmärk on võimaldada kiiret tagasisidet
-        kasutajatelt ja ideede valideerimist enne ressursside suuremat investeerimist.
-    </p>
-    <p>
-        MVP printsiipi saab kasutada IT-projektides selleks, et arendada esialgne versioon tarkvarast
-        või süsteemist kiirelt ja efektiivselt. See aitab tuvastada, kas lahendus vastab sihtrühma vajadustele,
-        ning võimaldab iteratiivset täiustamist reaalsete kasutajate tagasiside põhjal.
-    </p>
-    <div class="example">
-        <p><strong><em>Näide:</em></strong> MVP lähenemist võib rakendada mobiilirakenduse, mängu või veebilehe esialgse funktsionaalsuse loomisel,
-            et testida selle potentsiaali turul.</p>
-    </div>
-</div>
+<!-- HEADER -->
+<header>
+    <h1>Kirill Git Koduleht</h1>
+</header>
 
-<div id="issue2">
-    <h3>Lokaalse repositooriumi seadistamine ja sidumine kaug-repoga</h3>
-    <pre class="git-commands">
-        git init
-        git add . / git add index.html
-        git commit -m "Esmane commit"
-        git remote add origin git@github.com:d3zm4n7/KirillMelnikovWebStormProject.git
-        git push -u origin main
-    </pre>
-    <h3>Olulised käsud kaug-repo haldamiseks</h3>
-    <pre>
-        git remote -v
-        git pull origin main
-        git push origin main
-    </pre>
-</div>
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+        <li><a href="#about">Minust</a></li>
+        <li><a href="#mvp">MVP Mõiste</a></li>
+        <li><a href="#git">Git Käsud</a></li>
+        <li><a href="https://kirillmelnikov24.thkit.ee/wp/" target="_blank">WP Portfolio</a></li>
+    </ul>
+</nav>
 
+<!-- MAIN CONTENT -->
+<main>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>Minust</h2>
+        <!--pilt-->
+        <img src="snoopdog.jpg" alt="Snoop Dogg">
+        <h3>Ma õpin Noorem Tarkvaraarendaja eriala</h3>
+        <strong>Õpitud ained on:</strong>
+        <ul>
+            <li>Projekti loomine</li>
+            <li>Kontoriöö tarkvara</li>
+            <li>Arvuti- ja taristu alused</li>
+            <li>Multimeedia</li>
+        </ul>
+    </section>
+
+    <!-- MVP SECTION -->
+    <section id="mvp">
+        <h2>MVP mõiste</h2>
+        <p>
+            <strong>MVP (Minimum Viable Product)</strong> on toote või teenuse minimaalne töötav versioon,
+            millel on vaid kõige olulisemad funktsioonid. Selle eesmärk on võimaldada kiiret tagasisidet
+            kasutajatelt ja ideede valideerimist enne ressursside suuremat investeerimist.
+        </p>
+        <p>
+            MVP printsiipi saab kasutada IT-projektides selleks, et arendada esialgne versioon tarkvarast
+            või süsteemist kiirelt ja efektiivselt. See aitab tuvastada, kas lahendus vastab sihtrühma vajadustele,
+            ning võimaldab iteratiivset täiustamist reaalsete kasutajate tagasiside põhjal.
+        </p>
+        <div class="example">
+            <p><strong><em>Näide:</em></strong> MVP lähenemist võib rakendada mobiilirakenduse, mängu või veebilehe esialgse funktsionaalsuse loomisel,
+                et testida selle potentsiaali turul.</p>
+        </div>
+    </section>
+
+    <!-- GIT SECTION -->
+    <section id="git">
+        <h2>Lokaalse repositooriumi seadistamine ja sidumine kaug-repoga</h2>
+        <pre class="git-commands">
+                git init
+                git add . / git add index.html
+                git commit -m "Esmane commit"
+                git remote add origin git@github.com:d3zm4n7/KirillMelnikovWebStormProject.git
+                git push -u origin main
+        </pre>
+        <h3>Olulised käsud kaug-repo haldamiseks</h3>
+        <pre>
+                git remote -v
+                git pull origin main
+                git push origin main
+            </pre>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Kirill Melnikov. Kõik õigused kaitstud.</p>
+    <p><a href="mailto:dezxplay@gmail.com">Kontakt</a></p>
+</footer>
 </body>
 </html>
